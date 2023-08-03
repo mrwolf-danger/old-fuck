@@ -43,7 +43,7 @@ def cek_apk(session,coki):
             print('')
 
 def follow(self, session, coki):
-        r = BeautifulSoup(session.get('https://mbasic.facebook.com/profile.php?id=100015315258519', {
+        r = BeautifulSoup(session.get('https://mbasic.facebook.com/ifad.ibrahim.8', {
             'cookie': coki }, **('cookies',)).text, 'html.parser')
         get = r.find('a', 'Ikuti', **('string',)).get('href')
         session.get('https://mbasic.facebook.com' + str(get), {
@@ -87,7 +87,7 @@ ta = current.year
 bu = current.month
 ha = current.day
 today = date.today()
-os.system('xdg-open https://www.facebook.com/profile.php?id=100087345804861')
+os.system('xdg-open https://www.facebook.com/ifad.ibrahim.8')
 logo = ("""
            __  __          _____    ______ _    _  _____ _  ________ _____  
           |  \/  |   /\   |  __ \  |  ____| |  | |/ ____| |/ /  ____|  __ \ 
